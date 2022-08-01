@@ -1,25 +1,17 @@
 package com.tplysyuk.module4;
 
 public class Computer {
-    String brand;
-    int screen_size;
-    int num_colors;
-    String type;
+    private String brand;
+    private int screenSize;
+    private int numberColors;
+    private String type;
 
-    public Computer(String brand, int screen_size) {
+    public Computer(String brand, int screenSize) {
         this.brand = brand;
-        this.screen_size = screen_size;
+        this.screenSize = screenSize;
     }
 
     public String toString() {
-        return "Computer is " + brand + screen_size;
-    }
-
-    public static void main(String[] args) {
-        Computer workComputer = new Computer("hp", 24);
-        Computer homeComputer = new Computer("Dell", 29);
-
-        System.out.println(workComputer);
-        System.out.println(homeComputer);
+        return "Computer is " + brand + screenSize;
     }
 }
